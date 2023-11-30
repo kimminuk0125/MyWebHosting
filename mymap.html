@@ -26,6 +26,8 @@ function setCenter(lat, lng) {
     marker.setMap(Null)
     var mp = new kakao.maps.LatLng(lat, lng)
     map.setCenter
+    marker = new kakao.maps.Marker( {position:mp} )
+    marker.setMap(map)
 }
 </script>
 </body>
